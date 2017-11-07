@@ -111,7 +111,7 @@ body {
 
 /*Campo para agregar lista*/
 #addList {
-  margin: 50px 0 0 20px;
+  margin: 10px 0 0 10px;
   width: 200px;
   height: 40px;
   background: #0079BF;
@@ -123,4 +123,44 @@ body {
 #addList:hover {
   cursor: pointer;
   background: #024d78;
+}
+
+form {
+  width: 220px;
+  height: auto;
+  margin: 50px 0 0 20px;
+  border-radius: .2rem;
+}
+
+/*Clases para nuevo form*/
+.newForm {
+  width: 220px;
+  height: 110px;
+  margin: 50px 0 0 20px;
+  background: #E2E4E6;
+  border-radius: .2rem;
+}
+
+.newInput {
+  margin: 10px 0 20px 10px;
+  width: 200px;
+  height: 40px;
+  outline: none;
+  background: #D6D8DA;
+  clear: both;
+  border-radius: .2rem;
+  border-color: #a1a1a1;
+}
+.btn {
+  margin-left: 10px;
+  padding: 10px;
+  border-radius: .2rem;
+  cursor: pointer;
+  background: #5AAC44;
+}
+
+.btn-close {
+  color: #757575;
+  margin-left: 30px;
+  cursor: pointer;
 }
