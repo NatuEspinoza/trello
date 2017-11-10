@@ -1,4 +1,4 @@
-window.onload = function() {
+
     //Variables
     var form = document.getElementById('form');
     var addList = document.getElementById('addList');
@@ -27,6 +27,7 @@ window.onload = function() {
       var formAddTarjet = document.createElement('div');
       formAddTarjet.className = 'addTarjet';
       var addTarjetLink = document.createElement('a');
+      addTarjetLink.className = 'link';
       var addTarjetTxt = document.createTextNode('Añadir una tarjeta...');
       addTarjetLink.appendChild(addTarjetTxt);
       //Agregando los div con las listas antes del formulario inicial
@@ -38,10 +39,12 @@ window.onload = function() {
       formAddTarjet.appendChild(value);
       formAddTarjet.appendChild(addTarjetLink);
     }
-    //Función para añadir la lista por medio de un text-area
 
-    //Función para cerrar
-    closeButtom.onclick = function () {
-
+    //Función para añadir una tarjeta abriendo un text-area
+    var addTarjet = document.getElementsByClassName('addTarjet')[0];
+    var link = document.getElementsByClassName('link')[0];
+    link.onclick = function(){
+      var textArea = document.createElement('textarea');
+      addTarjet.appendChild(textArea);
+      addTarjet.insertBefore(textArea, link);
     }
-  }

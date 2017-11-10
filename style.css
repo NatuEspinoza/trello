@@ -170,9 +170,20 @@ form {
 /* Estilos de función que guarda lista*/
 .addTarjet {
   width: 220px;
-  height: 110px;
+  height: auto;
   margin: 0 0 0 20px;
   background: #E2E4E6;
   border-radius: .2rem;
   display: inline-block;
+}
+.link {
+  color: grey;
+  cursor: pointer;
+}
+.link:hover {
+  text-decoration: underline;
+}
+/*Estilos de mi textArea*/
+.text-area {
+
 }
