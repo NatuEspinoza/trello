@@ -1,48 +1,51 @@
 <!DOCTYPE html>
 <html>
-  <head>
-      <meta charset="utf-8">
-      <meta name="viewport">
-      <title>trello</title>
-      <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
-      <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <!-- Menu de cabecera -->
-    <nav class="header">
-      <div class="boards">
-        <i class="fa fa-trello" aria-hidden="true"> Tableros</i>
-      </div>
-      <div class="search">
-        <i class="fa fa-search" aria-hidden="true"></i>
-      </div>
-      <div class="logo">
-        <i class="fa fa-trello" aria-hidden="true" fa-2x> <p>Trello</p></i>
-      </div>
-      <nav class="menu">
-        <div class="more">
-          <i class="fa fa-plus" aria-hidden="true"></i>
-        </div>
-        <div class="info">
-          <i class="fa fa-info-circle" aria-hidden="true"></i>
-        </div>
-        <div class="notification">
-          <i class="fa fa-bell-o" aria-hidden="true"></i>
-        </div>
-        <div class="user">
-        </div>
-      </nav>
-    </nav>
 
-    <!-- Añadir una lista -->
-    <section id="section">
-      <form id="form">
-        <input id="addList" type="text" name="name" placeholder="Añadir una lista..." autocomplete="off" dir="auto" maxlength="512">
-      </form>
-    </section>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport">
+  <title>trello</title>
+  <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Menu de cabecera -->
+  <nav class="header">
+    <div class="boards">
+      <i class="fa fa-trello" aria-hidden="true"> Tableros</i>
+    </div>
+    <div class="search">
+      <i class="fa fa-search" aria-hidden="true"></i>
+    </div>
+    <div class="logo">
+      <i class="fa fa-trello" aria-hidden="true" fa-2x> <p>Trello</p></i>
+    </div>
+    <nav class="menu">
+      <div class="more">
+        <i class="fa fa-plus" aria-hidden="true"></i>
+      </div>
+      <div class="info">
+        <i class="fa fa-info-circle" aria-hidden="true"></i>
+      </div>
+      <div class="notification">
+        <i class="fa fa-bell-o" aria-hidden="true"></i>
+      </div>
+      <div class="user">
+      </div>
+    </nav>
+  </nav>
+
+  <!-- Añadir una lista -->
+  <section id="section">
+    <form id="form">
+      <input id="addList" type="text" name="name" placeholder="Añadir una lista..." autocomplete="off" dir="auto" maxlength="512">
+    </form>
+  </section>
 
 
   <script src="app.js" type="application/javascript"></script>
   <script src="https://use.fontawesome.com/c555f55746.js"></script>
-  </body>
+</body>
+
 </html>
