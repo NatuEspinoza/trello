@@ -156,6 +156,14 @@ form {
   display: inline-block;
 }
 
+.formInit {
+  width: 220px;
+  height: 110px;
+  margin-left: 20px;
+  border-radius: .2rem;
+  display: inline-block;
+}
+
 .newInput {
   margin: 10px 0 20px 10px;
   width: 200px;

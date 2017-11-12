@@ -20,7 +20,14 @@ window.onload = function() {
     form.appendChild(closeButtom).className = 'btn-close';
   }
 
-
+  //función para cerrar el formulario
+  closeButtom.onclick = function() {
+    form.className = 'formInit'
+    form.appendChild(addList);
+    form.removeChild(input);
+    form.removeChild(buttom);
+    form.removeChild(closeButtom);
+  }
 
   //Función para guardar la lista al hacer click en el boton "guardar"
   buttom.onclick = function() {
@@ -64,4 +71,5 @@ window.onload = function() {
       formAddTarjet.insertBefore(addBtn, addTarjetLink);
     })
   })
+
 }
