@@ -40,8 +40,11 @@ window.onload = function() {
       var form = document.getElementById('form');
       //generando div que contendra el nombre de la lista y el link para añadir una tarjeta
       var formAddTarjet = document.createElement('div');
+      formAddTarjet.setAttribute('id', 'newForm')
       formAddTarjet.className = 'addTarjet';
       var addTarjetLink = document.createElement('a');
+      addTarjetLink.setAttribute('href', '#');
+      addTarjetLink.setAttribute('id', 'add');
       addTarjetLink.className = 'link';
       var addTarjetTxt = document.createTextNode('Añadir una tarjeta...');
       addTarjetLink.appendChild(addTarjetTxt);
@@ -58,14 +61,14 @@ window.onload = function() {
 
   //Función para añadir una tarjeta abriendo un text-area y un boton para añadir
   document.addEventListener("DOMContentLoaded", function() {
-    var formAddTarjet = document.querySelector('.addTarjet');
+    var formAddTarjet = document.getElementById('newForm');
     var addTarjetLink = document.querySelector('a');
-    formAddTarjet.addEventListener('click', function() {
+    addTarjetLink.addEventListener('click', function() {
       var textArea = document.createElement('textarea').className = 'text-area';
       var addBtn = document.createElement('buttom').className = 'addBtn';
       var textAddBtn = document.createTextNode('Añadir');
       addBtn.appendChild(textAddBtn);
-      formAddTarjet.appendChild(textArea);
+      formAddTarje.appendChild(textArea);
       formAddTarjet.appendChild(addBtn);
       formAddTarjet.insertBefore(textArea, addTarjetLink);
       formAddTarjet.insertBefore(addBtn, addTarjetLink);
